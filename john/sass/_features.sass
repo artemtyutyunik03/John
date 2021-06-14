@@ -1,0 +1,87 @@
+.features
+  margin-bottom: 83px
+  &__title
+    font-weight: normal
+    font-size: 22px
+    line-height: 60px
+    color: #21243D
+  &__inner
+    display: flex
+    flex-wrap: wrap
+  &__item 
+    width: 100%
+    display: flex
+    margin-bottom: 46px
+    padding: 31px 0
+    border-bottom: 1px solid #E0E0E0
+    &:last-child
+      margin-bottom: 0
+    &__info
+      margin-left: 18px
+    &__title
+      font-weight: bold
+      font-size: 30px
+      line-height: (44/30)
+      color: #21243D
+      transform: translateY(-20%)
+    &__subtitle
+      display: flex
+      align-items: center
+      margin-bottom: 25px
+    &__btn
+      height: 25px
+      font-weight: 900
+      font-size: 18px
+      line-height: (25/18)
+      color: #FFFFFF
+      background: #142850
+      border: 0
+      padding: 0 13px 0 13px
+      border-radius: 16px
+      cursor: pointer
+      margin-right: 26px
+    &__type
+      font-size: 20px
+      line-height: 29px
+      color: #8695A4
+    &__text
+      font-size: 16px
+      line-height: (23/16)
+      color: #21243D
+
+@media screen and ( max-width: 790px )
+  .features__item__title
+    font-size: 25px
+    line-height: 1.2
+  .features__item__text
+    font-size: 14px
+    line-height: 1.2
+  .features__item__subtitle
+    margin-bottom: 20px
+
+@media screen and ( max-width: 600px )
+  .features
+    margin-bottom: 40px
+    text-align: center
+    &__item
+      flex-direction: column
+      vertical-align: middle
+      align-items: center
+      text-align: center
+      display: none
+      margin-bottom: 0
+      &:first-child
+        display: block
+      &__img
+        margin: 0
+        margin-bottom: 17px
+      &__title
+        font-size: 18px
+      &__subtitle
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        margin-bottom: 24px
+      &__btn
+        grid-column-start: 2
+        grid-column-end: 3
+  

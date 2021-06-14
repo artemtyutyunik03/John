@@ -1,0 +1,34 @@
+@import fonts
+*
+  box-sizing: border-box
+body
+  font-family:  'Heebo Regular', sans-serif
+  font-style: normal
+  font-weight: normal
+
+.container
+  max-width: 856px
+  margin: 0 auto
+
+// .none
+//   display: none
+
+@import header
+@import posts
+@import features
+@import footer
+
+@media screen and ( max-width: 890px )
+  .container
+    max-width: 750px
+
+@media screen and ( max-width: 790px )
+  .container
+    max-width: 600px
+@media screen and ( max-width: 600px )
+  .container
+    max-width: 450px
+
+@media screen and ( max-width: 480px )
+  .container
+    max-width: 320px
